@@ -1,26 +1,22 @@
 package modelo;
 
 public class Planta {
-	int codigo;
+	String codigo;
 	String nombreComun;
 	String nombreCientifico;
 
-	public Planta(int codigo, String nombreComun, String nombreCientifico) {
+	public Planta(String codigo, String nombreComun, String nombreCientifico) {
 		super();
 		this.codigo = codigo;
 		this.nombreComun = nombreComun;
 		this.nombreCientifico = nombreCientifico;
 	}
 
-	public Planta() {
-		super();
-	}
-
-	public int getCodigo() {
+	public String getCodigo() {
 		return codigo;
 	}
 
-	public void setCodigo(int codigo) {
+	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
 
