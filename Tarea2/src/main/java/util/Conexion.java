@@ -39,6 +39,7 @@ public class Conexion {
 
 			// Establece la conexión
 			return m.getConnection();
+			
 		} catch (FileNotFoundException fileNotFoundException) {
 			System.out.println(
 					"Se ha producido una FileNotFoundException: " + fileNotFoundException.getLocalizedMessage());
@@ -52,6 +53,8 @@ public class Conexion {
 			System.out.println("Se ha producido una SQLException: " + e.getLocalizedMessage());
 			e.printStackTrace();
 		}
+		return null;
+		
 	}
 
 	public void cerrarConexion() {
@@ -59,7 +62,7 @@ public class Conexion {
 		try {
 			con.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+			// TODO Autreturn null;o-generated catch block
 			e.printStackTrace();
 		}
 	}
